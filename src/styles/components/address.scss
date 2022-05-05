@@ -1,0 +1,123 @@
+.top {
+    background-image: url("../../images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text_h {
+    font-weight: 500;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+button {
+    background-color: hsl(0, 0%, 17%);
+    height: 56.4px;
+    width: 56.4px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    transform: translateY(-0.2px);
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 15px 25px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    font-size: 18px;
+}
+
+input[type="text"]::placeholder {
+    color: hsl(0, 0%, 59%);
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+.details {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 70%;
+    height: 65%;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: -35%;
+    left: 14%;
+    z-index: 100000;
+}
+
+.tags {
+    padding: 2%;
+}
+
+.tags header {
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.tags main {
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-top: -15px;
+    border-right: 1.5px solid hsl(0, 0%, 79%);
+}
+
+@media (max-width: 1100px) {
+    .tags main {
+        font-size: 1rem;
+    }
+}
+
+.tags:last-of-type main {
+    border: none;
+}
+
+@media (max-width: 700px) {
+    .text_h {
+        font-size: 1.25rem;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+
+    .details {
+        bottom: -65%;
+        height: 110%;
+    }
+    .tags {
+        text-align: center;
+    }
+    .tags main {
+        padding: 15px;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.map {
+    height: 70vh;
+    margin: 0 !important;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
