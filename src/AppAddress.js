@@ -61,15 +61,20 @@ export const AppAddress = () => {
         );
     }
 
+
+
     return (
-        <div className="container text-center">
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
-                alt="Loading"
-            />
-            {setTimeout(() => {
+        <div className="divLoading" >
+            <h2 className="textLoading">
                 "If you see Loading for long time my quota for IPYFIY is finished."
-            }, 4000)}
+            </h2>
+            <div>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+                    alt="Loading"
+                />
+            </div>
+
         </div>
     );
 }
